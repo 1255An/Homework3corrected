@@ -19,10 +19,10 @@ public class Main {
 
         //задача 2
 
-        int firstFriday = 5;
-        while (firstFriday <= 31) {
-            System.out.println("Сегодня пятница, " + firstFriday + " число");
-            firstFriday = firstFriday + 7;
+        int fridayDate = 5;
+        while (fridayDate <= 31) {
+            System.out.println("Сегодня пятница, " + fridayDate + " число. Необходимо сдать отчет.");
+            fridayDate = fridayDate + 7;
         }
 
         // задача 3
@@ -30,25 +30,22 @@ public class Main {
         for (int year = currentYear - 200; year <= currentYear + 100; year++) {
             if (year % 79 == 0) {
                 System.out.println(year);
-                continue;
             }
         }
 
         // задача 4
         int a = 1;
-        while (a < 30) {
+        while (a <= 30) {
+            System.out.print(a + ": ");
             if (a % 3 == 0) {
-                System.out.println(a + ": ping");
-            } else if (a % 5 == 0) {
-                System.out.println(a + ": pong");
-            } else if (a % 3 == 0) {
-                System.out.println(a + ": ping pong");
-            } else {
-                System.out.println(a + ": ");
+                System.out.print("ping" + " ");
+            } if (a % 5 == 0) {
+                System.out.print("pong");
             }
             a++;
-        }
-        System.out.println(a + ": ");
+        System.out.println();
+            }
+
 
         //задача 5
         int b = 0;
